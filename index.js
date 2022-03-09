@@ -4,6 +4,8 @@ const cors = require("cors");
 const app = express();
 const swaggerJsDoc = require("swagger-jsdoc");
 const swaggerUi = require("swagger-ui-express");
+const dotenv = require('dotenv');
+dotenv.config();
 var corsOptions = {
   origin: "http://localhost:8081"
 };
