@@ -28,6 +28,8 @@ module.exports = app => {
   */
   router.get("/getAllTasks", taskController.findAll);
 
+  router.get("/getTest", taskController.getTest);
+
   /**
 * @swagger
 * /:id:
@@ -45,5 +47,7 @@ module.exports = app => {
   // // Create a new Task
   router.delete("/", taskController.deleteAll);
   router.post("/findByDates", taskController.findByDates);
+  
+
   app.use('/api/task', router);
 };

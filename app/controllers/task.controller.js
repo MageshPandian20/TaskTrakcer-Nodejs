@@ -169,3 +169,12 @@ exports.findByDates = async (req, res) => {
     });
       
 }
+
+exports.getTest = async (req, res) => {
+  console.log("dataNew=====>getTest");
+  res.status(200).send({
+    message:"Success"
+  });
+}
+
+
