@@ -14,6 +14,7 @@ exports.create = (req, res) => {
     description: req.body.description,
     isCompleted:req.body.isCompleted,
     date:req.body.date,
+    type:req.body.type,
     published: req.body.published ? req.body.published : false
   });
   // Save Task in the database
