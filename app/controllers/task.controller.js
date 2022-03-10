@@ -11,10 +11,6 @@ exports.create = (req, res) => {
     res.status(400).send({ message: "Description can not be empty!" });
     return;
   }
-  if (!req.body.isCompleted) {
-    res.status(400).send({ message: "isCompleted can not be empty!" });
-    return;
-  }
 
   if (!req.body.date) {
     res.status(400).send({ message: "Date can not be empty!" });
@@ -91,10 +87,6 @@ exports.update = (req, res) => {
   }
   if (!req.body.description) {
     res.status(400).send({ message: "Description can not be empty!" });
-    return;
-  }
-  if (!req.body.isCompleted) {
-    res.status(400).send({ message: "isCompleted can not be empty!" });
     return;
   }
 
