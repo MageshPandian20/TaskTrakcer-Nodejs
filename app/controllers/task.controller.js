@@ -142,7 +142,7 @@ exports.deleteAll = (req, res) => {
   Task.deleteMany({})
     .then(data => {
       res.send({
-        message: `${data.deletedCount} Tutorials were deleted successfully!`
+        message: `${data.deletedCount} Tasks were deleted successfully!`
       });
     })
     .catch(err => {
@@ -180,6 +180,7 @@ exports.findByDates = async (req, res) => {
       //      'data': { '$push': '$$ROOT' }
       //   }
       // },
+      
 
     ])
     .exec()
